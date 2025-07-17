@@ -1,8 +1,7 @@
 import { serverEntryVirtualId, type VitePluginServerEntryOptions } from '@brillout/vite-plugin-server-entry/plugin'
-import { isPhotonMeta } from '@photonjs/core/api'
 import MagicString from 'magic-string'
 import type { Plugin } from 'vite'
-import { assertUsage } from '../../utils/assert.js'
+import { isPhotonMeta } from "@photonjs/core/api";
 
 declare module 'vite' {
   interface UserConfig {
@@ -11,8 +10,6 @@ declare module 'vite' {
 }
 
 export function serverEntryPlugin(): Plugin[] {
-  let serverEntryInjected = false
-
   return [
     {
       name: 'vike-server:serverEntry',
@@ -22,18 +19,19 @@ export function serverEntryPlugin(): Plugin[] {
         return env.config.consumer === 'server'
       },
 
-      buildEnd() {
-        assertUsage(serverEntryInjected, 'Failed to inject virtual server entry.')
-      },
-
       transform: {
         order: 'post',
         handler(code, id) {
           const meta = this.getModuleInfo(id)?.meta
-          if (isPhotonMeta(meta) || meta?.photonConfig?.isTargetEntry) {
+          if (
+            meta?.photon?.standalone !== true &&
+            // No additional Photon target package is in use, so Photon entries are considered Target entries
+            ((isPhotonMeta(meta) && this.environment.config.photon.defaultBuildEnv === 'ssr') ||
+              // `isTargetEntry` is defined by Photon targets
+              meta?.photonConfig?.isTargetEntry)
+          ) {
             const ms = new MagicString(code)
             ms.prepend(`import "${serverEntryVirtualId}";\n`)
-            serverEntryInjected = true
             return {
               code: ms.toString(),
               map: ms.generateMap({
