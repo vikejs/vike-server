@@ -115,7 +115,7 @@ function createStandaloneIgnorePlugin(rollupResolve: (...args: any[]) => Promise
 }
 
 function findRollupBundleEntries(bundle: Rollup.OutputBundle, vikeServerConfig: Photon.ConfigResolved) {
-  const entries = ['index', ...Object.keys(vikeServerConfig.handlers)]
+  const entries = ['index', ...vikeServerConfig.entries.map((e) => e.target || e.name)]
 
   const chunks: Rollup.OutputChunk[] = []
   for (const key in bundle) {

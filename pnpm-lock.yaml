@@ -240,6 +240,9 @@ importers:
       '@types/react-dom':
         specifier: ^18.3.6
         version: 18.3.6(@types/react@18.3.20)
+      '@universal-middleware/core':
+        specifier: ^0.4.9
+        version: 0.4.9(@hattip/core@0.0.49)(elysia@1.3.5(exact-mirror@0.1.2(@sinclair/typebox@0.34.33))(file-type@21.0.0)(typescript@5.8.3))(fastify@5.3.0)(h3@1.15.1)(hono@4.7.8)
       '@vitejs/plugin-react':
         specifier: ^4.3.4
         version: 4.3.4(vite@6.3.5(@types/node@20.17.30))

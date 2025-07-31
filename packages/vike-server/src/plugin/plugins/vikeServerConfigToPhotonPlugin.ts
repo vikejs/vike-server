@@ -1,4 +1,3 @@
-import { resolvePhotonConfig } from '@photonjs/core/api'
 import { getVikeConfig } from 'vike/plugin'
 import type { Plugin } from 'vite'
 
@@ -10,7 +9,7 @@ export function vikeServerConfigToPhotonPlugin(): Plugin {
 
       if (vikeConfig.config.server) {
         return {
-          photon: resolvePhotonConfig(vikeConfig.config.server)
+          photon: vikeConfig.config.server
         }
       }
     }
