@@ -1,3 +1,12 @@
+## [1.0.22](https://github.com/vikejs/vike-server/compare/v1.0.21...v1.0.22) (2025-08-04)
+
+
+### Reverts
+
+* **fix:** better compat with newer vike versions ([5cb8e8b](https://github.com/vikejs/vike-server/commit/5cb8e8b68dd07c08cd07a52ee82fbde20e4b4b94))
+
+
+
 ## [1.0.21](https://github.com/vikejs/vike-server/compare/v1.0.20...v1.0.21) (2025-08-04)
 
 
