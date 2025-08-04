@@ -1,6 +1,6 @@
+import type { Config } from 'vike/types'
 import { vikeServer } from './plugin/index.js'
 import type { ConfigVikeServer } from './types.js'
-import type { Config } from 'vike/types'
 
 export { config as default }
 
@@ -8,9 +8,18 @@ const config = {
   name: 'vike-server',
   require: {
     vike: '>=0.4.231',
-    ['vike-react']: '>=0.6.4',
-    ['vike-vue']: '>=0.9.2',
-    ['vike-solid']: '>=0.7.11'
+    ['vike-react']: {
+      version: '>=0.6.4',
+      optional: true
+    },
+    ['vike-vue']: {
+      version: '>=0.9.2',
+      optional: true
+    },
+    ['vike-solid']: {
+      version: '>=0.7.11',
+      optional: true
+    }
   },
   vite: {
     plugins: [vikeServer()]
