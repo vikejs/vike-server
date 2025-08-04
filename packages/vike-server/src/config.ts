@@ -8,18 +8,9 @@ const config = {
   name: 'vike-server',
   require: {
     vike: '>=0.4.231',
-    ['vike-react']: {
-      version: '>=0.6.4',
-      optional: true
-    },
-    ['vike-vue']: {
-      version: '>=0.9.2',
-      optional: true
-    },
-    ['vike-solid']: {
-      version: '>=0.7.11',
-      optional: true
-    }
+    ['vike-react']: '>=0.6.4',
+    ['vike-vue']: '>=0.9.2',
+    ['vike-solid']: '>=0.7.11'
   },
   vite: {
     plugins: [vikeServer()]
@@ -39,6 +30,7 @@ const config = {
     },
     // +stream is defined by vike-{react,vue,solid} but we define it again here to avoid Vike throwing the "unknown config" error if the user doesn't use vike-{react,vue,solid}
     stream: {
+      env: { config: true },
       isDefinedByPeerDependency: true
     }
   }
