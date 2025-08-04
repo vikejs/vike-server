@@ -1,3 +1,12 @@
+## [1.0.21](https://github.com/vikejs/vike-server/compare/v1.0.20...v1.0.21) (2025-08-04)
+
+
+### Bug Fixes
+
+* better compat with newer vike versions ([8969ea9](https://github.com/vikejs/vike-server/commit/8969ea9a4f0451eb9822aca9ac25fff645de2ad2))
+
+
+
 ## [1.0.20](https://github.com/vikejs/vike-server/compare/v1.0.19...v1.0.20) (2025-08-04)
 
 
