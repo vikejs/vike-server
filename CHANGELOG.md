@@ -1,3 +1,12 @@
+## [1.0.20](https://github.com/vikejs/vike-server/compare/v1.0.19...v1.0.20) (2025-08-04)
+
+
+### Bug Fixes
+
+* do not try to dedupe vike-server, as it messes up module resolution ([#128](https://github.com/vikejs/vike-server/issues/128)) ([0c63f34](https://github.com/vikejs/vike-server/commit/0c63f340e6429394b615ab186a934b9de8a91ab8))
+
+
+
 ## [1.0.19](https://github.com/vikejs/vike-server/compare/v1.0.18...v1.0.19) (2025-06-10)
 
 
