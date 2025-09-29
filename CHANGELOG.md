@@ -1,3 +1,12 @@
+## [1.0.24](https://github.com/vikejs/vike-server/compare/v1.0.23...v1.0.24) (2025-09-29)
+
+
+### Bug Fixes
+
+* avoid type mismatch (vikejs/vike-photon[#4](https://github.com/vikejs/vike-server/issues/4), fix [#135](https://github.com/vikejs/vike-server/issues/135)) ([3c9c028](https://github.com/vikejs/vike-server/commit/3c9c02818b2ff470fb760c8c60aabc2bea1ec677))
+
+
+
 ## [1.0.23](https://github.com/vikejs/vike-server/compare/v1.0.22...v1.0.23) (2025-08-18)
 
 
