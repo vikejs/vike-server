@@ -1,7 +1,7 @@
 import type { Config } from 'vike/types'
 import { vikeServer } from './plugin/index.js'
 import type { ConfigVikeServer } from './types.js'
-import type { RuntimeAdapterTarget } from '@universal-middleware/core'
+import type { RuntimeAdapter } from '@universal-middleware/core'
 
 export { config as default }
 
@@ -55,7 +55,7 @@ declare global {
       server?: ConfigVikeServer['server'][]
     }
     interface PageContext {
-      runtime?: RuntimeAdapterTarget
+      runtime?: RuntimeAdapter
     }
   }
 }
