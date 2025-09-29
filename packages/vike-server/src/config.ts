@@ -54,8 +54,8 @@ declare global {
     interface ConfigResolved {
       server?: ConfigVikeServer['server'][]
     }
-    interface PageContext {
-      runtime?: RuntimeAdapter
+    interface PageContextServer {
+      runtime: RuntimeAdapter
     }
   }
 }
