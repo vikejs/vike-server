@@ -57,5 +57,8 @@ declare global {
     interface PageContextServer {
       runtime: RuntimeAdapter
     }
+    interface PageContextClient {
+      runtime: undefined
+    }
   }
 }
