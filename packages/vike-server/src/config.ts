@@ -28,7 +28,7 @@ const config = {
   // @ts-ignore
   stream: {
     enable: null,
-    type: 'web'
+    type: 'web' as const
   },
   meta: {
     server: {
