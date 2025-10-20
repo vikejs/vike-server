@@ -1,3 +1,12 @@
+## [1.0.25](https://github.com/vikejs/vike-server/compare/v1.0.24...v1.0.25) (2025-10-20)
+
+
+### Bug Fixes
+
+* properly set meta.stream ([fa2fde3](https://github.com/vikejs/vike-server/commit/fa2fde30b10014827909499a35e2c71d11ede146))
+
+
+
 ## [1.0.24](https://github.com/vikejs/vike-server/compare/v1.0.23...v1.0.24) (2025-09-29)
 
 
