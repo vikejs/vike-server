@@ -39,7 +39,6 @@ const config = {
     },
     // +stream is defined by vike-{react,vue,solid} but we define it again here to avoid Vike throwing the "unknown config" error if the user doesn't use vike-{react,vue,solid}
     stream: {
-      env: { config: true },
       isDefinedByPeerDependency: true
     }
   }
