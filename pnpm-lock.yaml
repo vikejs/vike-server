@@ -15,8 +15,8 @@ importers:
         specifier: ^1.9.4
         version: 1.9.4
       '@brillout/test-e2e':
-        specifier: ^0.6.10
-        version: 0.6.10
+        specifier: ^0.6.20
+        version: 0.6.20
       '@brillout/test-types':
         specifier: ^0.1.15
         version: 0.1.15(typescript@5.8.3)
@@ -408,8 +408,8 @@ packages:
   '@brillout/require-shim@0.1.2':
     resolution: {integrity: sha512-3I4LRHnVZXoSAsEoni5mosq9l6eiJED58d9V954W4CIZ88AUfYBanWGBGbJG3NztaRTpFHEA6wB3Hn93BmmJdg==}
 
-  '@brillout/test-e2e@0.6.10':
-    resolution: {integrity: sha512-eVXMzIXiw7M5TMMAmWmSry5DGWjioXFOkU8J74sjaTNLQjC8qkNp8Mi3/wI0KUlZLMmfo5QWV3z2ToCRAE5TGA==}
+  '@brillout/test-e2e@0.6.20':
+    resolution: {integrity: sha512-bhrUsLtmlPg0QayXS1ni7SpCG4cV19sXEV8s1uslXhpEWYujQieRqBUMUfFFkHp97Fl9uo/8xYqJ9zwEFoBNUw==}
     hasBin: true
 
   '@brillout/test-types@0.1.15':
@@ -2097,15 +2097,6 @@ packages:
   node-fetch-native@1.6.6:
     resolution: {integrity: sha512-8Mc2HhqPdlIfedsuZoc3yioPuzp6b+L5jRCRY1QzuWZh2EGJVQrGppC6V6cF0bLdbW0+O2YpqCA25aF/1lvipQ==}
 
-  node-fetch@2.7.0:
-    resolution: {integrity: sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==}
-    engines: {node: 4.x || >=6.0.0}
-    peerDependencies:
-      encoding: ^0.1.0
-    peerDependenciesMeta:
-      encoding:
-        optional: true
-
   node-mock-http@1.0.0:
     resolution: {integrity: sha512-0uGYQ1WQL1M5kKvGRXWQ3uZCHtLTO8hln3oBjIusM75WoesZ909uQJs/Hb946i2SS+Gsrhkaa6iAO17jRIv6DQ==}
 
@@ -2593,9 +2584,6 @@ packages:
     resolution: {integrity: sha512-FVDYdxtnj0G6Qm/DhNPSb8Ju59ULcup3tuJxkFb5K8Bv2pUXILbf0xZWU8PX8Ov19OXljbUyveOFwRMwkXzO+A==}
     engines: {node: '>=16'}
 
-  tr46@0.0.3:
-    resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
-
   tr46@1.0.1:
     resolution: {integrity: sha512-dTpowEjclQ7Kgx5SdBkqRzVhERQXov8/l9Ft9dVM9fmg0W0KQSVaXX9T4i6twCPNtYiZM53lpSSUAwJbFPOHxA==}
 
@@ -2746,14 +2734,8 @@ packages:
       yaml:
         optional: true
 
-  webidl-conversions@3.0.1:
-    resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
-
   webidl-conversions@4.0.2:
     resolution: {integrity: sha512-YQ+BmxuTgd6UXZW3+ICGfyqRyHXVlD5GtQr5+qjiNW7bF0cqrzX500HVXPBOvgXb5YnzDd+h0zqyv61KUD7+Sg==}
-
-  whatwg-url@5.0.0:
-    resolution: {integrity: sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==}
 
   whatwg-url@7.1.0:
     resolution: {integrity: sha512-WUu7Rg1DroM7oQvGWfOiAK21n74Gg+T4elXEQYkOhtyLeWiJFoOGLXPKI/9gzIie9CtwVLm8wtw6YJdKyxSjeg==}
@@ -2966,21 +2948,18 @@ snapshots:
 
   '@brillout/require-shim@0.1.2': {}
 
-  '@brillout/test-e2e@0.6.10':
+  '@brillout/test-e2e@0.6.20':
     dependencies:
       '@brillout/part-regex': 0.1.4
       '@brillout/picocolors': 1.0.26
       chai: 4.5.0
       esbuild: 0.23.1
       fast-glob: 3.3.3
-      node-fetch: 2.7.0
       pixelmatch: 5.3.0
       playwright-chromium: 1.51.1
       pngjs: 6.0.0
       source-map-support: 0.5.21
       strip-ansi: 6.0.1
-    transitivePeerDependencies:
-      - encoding
 
   '@brillout/test-types@0.1.15(typescript@5.8.3)':
     dependencies:
@@ -4549,10 +4528,6 @@ snapshots:
 
   node-fetch-native@1.6.6: {}
 
-  node-fetch@2.7.0:
-    dependencies:
-      whatwg-url: 5.0.0
-
   node-mock-http@1.0.0: {}
 
   node-releases@2.0.19: {}
@@ -5055,8 +5030,6 @@ snapshots:
     dependencies:
       tldts: 6.1.85
 
-  tr46@0.0.3: {}
-
   tr46@1.0.1:
     dependencies:
       punycode: 2.3.1
@@ -5177,14 +5150,7 @@ snapshots:
       '@types/node': 20.17.30
       fsevents: 2.3.3
 
-  webidl-conversions@3.0.1: {}
-
   webidl-conversions@4.0.2: {}
-
-  whatwg-url@5.0.0:
-    dependencies:
-      tr46: 0.0.3
-      webidl-conversions: 3.0.1
 
   whatwg-url@7.1.0:
     dependencies:
