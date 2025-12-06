@@ -86,7 +86,7 @@ function testRun(
   test('redirect throw', async () => {
     const response: Response = await fetch(`${getServerUrl()}/guarded`, { redirect: 'manual' })
     expect(response.status).toBe(302)
-    expect(response.headers.get('location')).toBe(`${getServerUrl()}/`)
+    expect(response.headers.get('location')).toBe('/')
   })
 
   test('redirect config', async () => {
